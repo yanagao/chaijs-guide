@@ -1,71 +1,71 @@
 # chaijs-guide
 
 ## 语言链：
-下面的接口是单纯作为语言链提供以期提高断言的可读性。除非被插件改写否则它们一般不提供测试功能。
+下面的接口是单纯作为语言链提供以期提高断言的可读性。除非被插件改写否则它们一般不提供测试功能。<br />
 to <br />
 be <br />
-been
-is
-that
-which
-and
-has
-have
-with
-at
-of
-same
-
+been <br />
+is <br />
+that <br />
+which <br />
+and <br />
+has <br />
+have <br />
+with <br />
+at <br />
+of <br />
+same <br />
+ <br />
 ## API:
-.not
-目标取反
-// query的值不为true
-expect(query('d', url)).to.not.be.equal(‘true’);
-
-类型判断
-.a(type)/.an(type)
-既可作为语言链，又可作为断言使用
-type: string,被测试的值的类型
-// 断言
-expect(‘test’).to.be.a(‘string’);
-expect({foo: ‘bar’}).to.be.a(‘object);
-expect(null).to.be.a(‘null);
-expect(undefined).to.be.a(‘undefined’);
-expect(new Error).to.be.a(‘error’);
-expect(new Promise).to.be.a(‘promise’);
-// 语言链
-expect(foo).to.be.a.instanceof(Foo);
-
-.ok
-目标为真值
-expect(1).to.be.ok;
-expect(null).to.not.be.ok;
-
-.true
-目标为true（不进行类型转换）
-expect(true).to.be.true;
-expect(1).to.not.be.ok;
-
-.false
-目标为false
-expect(false).to.be.false;
-expect(0).to.not.be.false;
-
-.null
-目标为null
-expect(null).to.be.null;
-expect(undefined).to.not.be.null;
-
-.undefined
-目标为undefined
-expect(undefined).to.be.undefined;
-expect(null).to.not.be.undefined;
-
-.NaN
-目标为非数字NaN
-expect(‘foo’).to.be.NaN;
-expect(4).to.not.be.NaN;
-
+#### .not
+目标取反 <br />
+// query的值不为true <br />
+expect(query('d', url)).to.not.be.equal(‘true’); <br />
+ <br />
+### 类型判断
+####.a(type)/.an(type)
+既可作为语言链，又可作为断言使用 <br />
+type: string,被测试的值的类型 <br />
+// 断言 <br />
+expect(‘test’).to.be.a(‘string’); <br />
+expect({foo: ‘bar’}).to.be.a(‘object); <br />
+expect(null).to.be.a(‘null); <br />
+expect(undefined).to.be.a(‘undefined’); <br />
+expect(new Error).to.be.a(‘error’); <br />
+expect(new Promise).to.be.a(‘promise’); <br />
+// 语言链 <br />
+expect(foo).to.be.a.instanceof(Foo); <br />
+ <br />
+#### .ok
+目标为真值 <br />
+expect(1).to.be.ok; <br />
+expect(null).to.not.be.ok; <br />
+ <br />
+#### .true
+目标为true（不进行类型转换） <br />
+expect(true).to.be.true; <br />
+expect(1).to.not.be.ok; <br />
+ <br />
+#### .false
+目标为false <br />
+expect(false).to.be.false; <br />
+expect(0).to.not.be.false; <br />
+ <br />
+#### .null
+目标为null <br />
+expect(null).to.be.null; <br />
+expect(undefined).to.not.be.null; <br />
+ <br />
+#### .undefined
+目标为undefined <br />
+expect(undefined).to.be.undefined; <br />
+expect(null).to.not.be.undefined; <br />
+ <br />
+#### .NaN
+目标为非数字NaN <br />
+expect(‘foo’).to.be.NaN; <br />
+expect(4).to.not.be.NaN; <br />
+ <br />
 .arguments
 目标为一个参数对象argument
 expect(argument).to.be.argument;
