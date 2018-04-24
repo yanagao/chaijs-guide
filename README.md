@@ -2,19 +2,19 @@
 
 ## 语言链：
 下面的接口是单纯作为语言链提供以期提高断言的可读性。除非被插件改写否则它们一般不提供测试功能。
-to
-be
-been
-is
-that
-which
-and
-has
-have
-with
-at
-of
-same
+> to
+> be
+> been
+> is
+> that
+> which
+> and
+> has
+> have
+> with
+> at
+> of
+> same
 
 ## API:
 .not
